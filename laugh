@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>something mathsy</title>
+<script>
+function repeatMe(){
+  var val1 = document.getElementById('inputField1').value;
+ 
+  var val2 = document.getElementById('inputField2').value;
+  document.getElementById('result').innerHTML = +val1 * +val2;
+}
+</script>
+</head>
+<h1 style="color:blue; text-align: left">The Multiplicator Excercise</h1>
+<body bgcolor="red">
+  <input type="text" id="inputField1">
+  <button onclick="repeatMe()" style="text-align: left">PRESS</button>
+  <p style="color:blue;">prepare to be blown away. just type in a number and press the button.</p>
+<input type="text" id="inputField2">
+<button onclick="repeatMe()" style="text-align: left">PRESS</button>
+<p style="color:blue;">prepare to be blown away. just type in a number and press the button.</p>
+<div id="result"> </div>
+ 
+
+
+</body>
+</html>

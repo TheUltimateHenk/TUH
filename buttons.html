@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>info blocks </title>
+
+<script>
+/*
+	Creates a square with the features given as parameters
+	and appends it to the body element.
+*/
+function makeSquare(size, color){
+
+
+	// Creates a new div element:
+	var div = document.createElement("div");
+	div.style.display = "inline-block";
+	div.style.height = size+"px";
+	div.style.width = size+"px";
+	div.style.backgroundColor=color;
+	div.style.margin="5px";
+
+	// Appends the new div to the end of the body element.
+	document.body.appendChild(div);
+}
+
+/*
+	Retrieves the information given by user (number, size and color) and creates
+	squares accordingly. Calls the makeSquare function when needed.
+*/
+function addSquares(number){
+  var val1 = document.getElementById('inputNumber').value;
+
+  var val2 = document.getElementById('inputColor').value;
+
+  var val3 = document.getElementById('inputSize').value;
+
+	for(var i=0;i<val1;i++){
+		makeSquare(val3, val2)
+	}
+	// Your task is to make this work...
+}
+
+</script>
+</head>
+
+<body>
+	<h1>info blocks</h1>
+	<p style="font-weight:bold"> Fill in the info and a slap that clicker to get a yo' block today. </p>
+  <p>We are not responsible for: brain frying, mental scarring, seizures nor any other mental or physical harm.</p>
+
+	<p>Number of squares:<input type="text" id="inputNumber"></p>
+	<p>Color of squares:<input type="text" id="inputColor"></p>
+	<p>Size of squares (px):<input type="text" id="inputSize"></p>
+	<button onclick="addSquares()">Add squares!</button>
+
+</body>
+</html
